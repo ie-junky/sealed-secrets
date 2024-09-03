@@ -116,12 +116,12 @@ jobs:
         kubectl cluster-info
 
     - name: Download manifest artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: controller-manifest
 
     - name: Download container image artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: controller-image
 
